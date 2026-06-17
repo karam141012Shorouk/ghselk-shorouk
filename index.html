@@ -31,22 +31,50 @@
                     <div class="bg-white rounded-lg p-5 shadow-md text-center">
                         <h3 class="font-bold text-xl text-purple-700 mb-2">عرض خارجي ❤️</h3>
                         <p class="text-4xl font-black text-green-600 mt-2">150 ج.م</p>
-                        <p class="text-sm text-gray-600 mt-2">غسيل جسم السيارة بالكامل + الجنوط</p>
                     </div>
                     <div class="bg-white rounded-lg p-5 shadow-md text-center">
                         <h3 class="font-bold text-xl text-purple-700 mb-2">عرض داخلي ❤️</h3>
                         <p class="text-4xl font-black text-green-600 mt-2">150 ج.م</p>
-                        <p class="text-sm text-gray-600 mt-2">تنظيف داخلي + مكنسة + تلميع تابلوه</p>
                     </div>
                     <div class="bg-white rounded-lg p-5 shadow-md text-center border-2 border-yellow-400">
                         <h3 class="font-bold text-xl text-purple-700 mb-2">عرض داخلي وخارجي 😍🙅</h3>
                         <p class="text-4xl font-black text-green-600 mt-2">300 ج.م</p>
-                        <p class="text-sm text-gray-600 mt-2">غسيل شامل كامل + معطر هدية</p>
                     </div>
                 </div>
             </div>
 
-            <a href="https://wa.me/201127915966" target="_blank" class="block w-full bg-green-500 hover:bg-green-600 text-white text-center font-bold py-4 px-6 rounded-xl text-xl shadow-lg transition mb-4">📱 احجز على واتساب: 01127915966</a>
+            <!-- فورم الحجز الجديد -->
+            <div class="bg-blue-50 rounded-xl p-6 mb-6 border-r-4 border-blue-500">
+                <h2 class="text-2xl font-bold text-blue-800 mb-4 text-center">📝 احجز الآن</h2>
+                <form onsubmit="sendToWhatsApp(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-gray-700 font-bold mb-2">اسمك:</label>
+                        <input type="text" id="name" required class="w-full p-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 outline-none" placeholder="اكتب اسمك">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-bold mb-2">رقم موبايلك:</label>
+                        <input type="tel" id="phone" required class="w-full p-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 outline-none" placeholder="01xxxxxxxxx">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-bold mb-2">اختار العرض:</label>
+                        <select id="service" required class="w-full p-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 outline-none">
+                            <option value="">اختار العرض</option>
+                            <option value="عرض خارجي - 150 ج.م">عرض خارجي - 150 ج.م</option>
+                            <option value="عرض داخلي - 150 ج.م">عرض داخلي - 150 ج.م</option>
+                            <option value="عرض داخلي وخارجي - 300 ج.م">عرض داخلي وخارجي - 300 ج.م</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-bold mb-2">عنوانك في الشروق:</label>
+                        <input type="text" id="address" required class="w-full p-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 outline-none" placeholder="مثال: الحي الأول مجاورة 3">
+                    </div>
+                    <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-6 rounded-xl text-xl shadow-lg transition">
+                        📱 ابعت الحجز على واتساب
+                    </button>
+                </form>
+            </div>
+
+            <a href="https://wa.me/201127915966" target="_blank" class="block w-full bg-gray-500 hover:bg-gray-600 text-white text-center font-bold py-3 px-6 rounded-xl text-lg shadow-lg transition mb-4">أو كلمنا مباشرة: 01127915966</a>
             
             <div class="text-center text-gray-600 mt-6">
                 <p class="font-bold text-lg">متاحين في مدينة الشروق فقط</p>
@@ -59,5 +87,19 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function sendToWhatsApp(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const service = document.getElementById('service').value;
+            const address = document.getElementById('address').value;
+            
+            const message = `*حجز جديد من الموقع*%0A%0Aالاسم: ${name}%0Aرقم الموبايل: ${phone}%0Aالعرض: ${service}%0Aالعنوان: ${address}`;
+            
+            window.open(`https://wa.me/201127915966?text=${message}`, '_blank');
+        }
+    </script>
 </body>
 </html>
