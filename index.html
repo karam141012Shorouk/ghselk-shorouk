@@ -3,157 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>غسيلك لعندك - غسيل سيارات متنقل في الشروق</title>
+    <title>غسيلك لعندك - خدمة غسيل السيارات</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Cairo', sans-serif; }
+        * { font-family: 'Cairo', sans-serif; }
+        body { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; }
     </style>
 </head>
-<body class="bg-gray-50">
-    
-    <!-- البانر الأحمر -->
-    <div class="bg-red-600 text-white text-center py-3 px-4 font-bold text-lg">
-        🔥 خصم 20% على أول غسلة بكود: NEW50 🔥
-    </div>
-
-    <div class="max-w-4xl mx-auto p-4 md:p-8">
-        
-        <!-- الهيدر -->
-        <div class="text-center mb-8">
-            <h1 class="text-4xl md:text-5xl font-black text-blue-900 mb-2">غسيلك لعندك</h1>
-            <p class="text-xl text-gray-700 font-bold">غسيل سيارات متنقل في الشروق والمدن الجديدة</p>
-            <p class="text-lg text-gray-600 mt-2">نوصلك لحد باب البيت - خدمة احترافية بمواد أصلية</p>
-        </div>
-
-        <!-- المميزات الجديدة -->
-        <div class="bg-green-50 p-4 rounded-xl text-center mb-4 border-2 border-green-200">
-            <p class="font-black text-green-800 text-lg">
-                مواد أصلية ✓ فريق محترف ✓ ضمان الجودة ✓ ظبط ضغط الإطارات مجاناً ✓
-            </p>
-        </div>
-
-        <!-- طرق الدفع الجديدة -->
-        <div class="bg-blue-50 border-2 border-blue-200 p-4 rounded-xl text-center mb-6">
-            <p class="font-black text-blue-900 text-xl mb-2">💳 طرق الدفع</p>
-            <p class="text-gray-800 font-bold">انستا باي - فودافون كاش - اتصالات كاش - كاش</p>
-            <p class="text-blue-700 font-black text-lg mt-2">رقم التحويل: 01127915966</p>
-        </div>
-
-        <!-- الأسعار -->
-        <div class="bg-white rounded-2xl shadow-lg p-6 mb-6">
-            <h2 class="text-3xl font-black text-center text-blue-900 mb-6">أسعارنا</h2>
+<body class="p-4">
+    <div class="max-w-4xl mx-auto">
+        <div class="bg-white rounded-2xl shadow-2xl p-8 mt-10">
+            <h1 class="text-4xl font-black text-center text-purple-700 mb-2">غسيلك لعندك</h1>
+            <div class="text-center mb-4"><span class="text-5xl">🚗</span></div>
+            <div class="bg-red-500 text-white text-center py-2 rounded-lg mb-6 font-bold">
+                🔥 خصم 20% على أول غسلة بكود: NEW50 🔥
+            </div>
             
-            <div class="grid md:grid-cols-3 gap-4">
-                <div class="border-2 border-gray-200 rounded-xl p-4 text-center hover:border-blue-500 transition">
-                    <h3 class="text-xl font-black text-gray-800 mb-2">الغسلة العادية</h3>
-                    <p class="text-3xl font-black text-blue-600 mb-2">150 ج.م</p>
-                    <p class="text-gray-600">غسيل خارجي + داخلي سريع</p>
+            <!-- قسم الأسعار -->
+            <div class="bg-green-50 rounded-xl p-6 mb-6 border-r-4 border-green-500">
+                <h2 class="text-2xl font-bold text-green-800 mb-4 text-center">💰 عروضنا أرخص من أي حد</h2>
+                
+                <!-- سيدان -->
+                <h3 class="text-xl font-bold text-purple-700 mb-3">🚗 العربيات السيدان:</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mb-6">
+                    <div class="bg-white rounded-lg p-4 shadow-md text-center">
+                        <h4 class="font-bold text-purple-700 mb-1">خارجي فقط</h4>
+                        <p class="text-3xl font-black text-green-600">130 ج.م</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 shadow-md text-center">
+                        <h4 class="font-bold text-purple-700 mb-1">داخلي فقط</h4>
+                        <p class="text-3xl font-black text-green-600">130 ج.م</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 shadow-md text-center border-2 border-yellow-400">
+                        <h4 class="font-bold text-purple-700 mb-1">شامل</h4>
+                        <p class="text-3xl font-black text-green-600">250 ج.م</p>
+                        <p class="text-xs text-red-500 line-through">بدل 265</p>
+                    </div>
                 </div>
 
-                <div class="border-2 border-blue-500 rounded-xl p-4 text-center bg-blue-50 relative">
-                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-red-600 text-white px-3 py-1 rounded-full text-sm font-bold">الأكثر طلباً</div>
-                    <h3 class="text-xl font-black text-gray-800 mb-2 mt-2">الغسلة الشاملة</h3>
-                    <p class="text-3xl font-black text-blue-600 mb-2">250 ج.م</p>
-                    <p class="text-gray-600">غسيل + تلميع + تعطير + كاوتش</p>
+                <!-- SUV -->
+                <h3 class="text-xl font-bold text-purple-700 mb-3">🚙 العربيات الـ SUV:</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mb-4">
+                    <div class="bg-white rounded-lg p-4 shadow-md text-center">
+                        <h4 class="font-bold text-purple-700 mb-1">خارجي فقط</h4>
+                        <p class="text-3xl font-black text-green-600">160 ج.م</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 shadow-md text-center">
+                        <h4 class="font-bold text-purple-700 mb-1">داخلي فقط</h4>
+                        <p class="text-3xl font-black text-green-600">160 ج.م</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 shadow-md text-center border-2 border-yellow-400">
+                        <h4 class="font-bold text-purple-700 mb-1">شامل</h4>
+                        <p class="text-3xl font-black text-green-600">290 ج.م</p>
+                        <p class="text-xs text-red-500 line-through">بدل 310</p>
+                    </div>
                 </div>
 
-                <div class="border-2 border-gray-200 rounded-xl p-4 text-center hover:border-blue-500 transition">
-                    <h3 class="text-xl font-black text-gray-800 mb-2">الباقة الشهرية</h3>
-                    <p class="text-3xl font-black text-blue-600 mb-2">800 ج.م</p>
-                    <p class="text-gray-600">4 غسلات شاملة في الشهر</p>
+                <!-- اشتراكات -->
+                <div class="bg-yellow-50 rounded-lg p-4 mt-4">
+                    <h4 class="font-bold text-center text-yellow-800 mb-2">🎁 اشتراك 4 غسلات شامل</h4>
+                    <p class="text-center text-2xl font-bold">سيدان: <span class="text-green-600">800 ج.م</span> <span class="text-sm text-red-500 line-through">848</span></p>
+                    <p class="text-center text-2xl font-bold">SUV: <span class="text-green-600">920 ج.م</span> <span class="text-sm text-red-500 line-through">992</span></p>
                 </div>
             </div>
+
+            <!-- فورم الحجز -->
+            <div class="bg-blue-50 rounded-xl p-6 mb-6 border-r-4 border-blue-500">
+                <h2 class="text-2xl font-bold text-blue-800 mb-4 text-center">📝 احجز الآن</h2>
+                <form onsubmit="sendToWhatsApp(event)" class="space-y-3">
+                    <input type="text" id="name" required class="w-full p-3 border-2 border-gray-300 rounded-lg" placeholder="اسمك">
+                    <input type="tel" id="phone" required class="w-full p-3 border-2 border-gray-300 rounded-lg" placeholder="رقم موبايلك 01xxxxxxxxx">
+                    <select id="carType" required class="w-full p-3 border-2 border-gray-300 rounded-lg">
+                        <option value="">نوع العربية</option>
+                        <option value="سيدان">سيدان - عربية عادية</option>
+                        <option value="SUV">SUV - عربية عالية</option>
+                    </select>
+                    <select id="service" required class="w-full p-3 border-2 border-gray-300 rounded-lg">
+                        <option value="">اختار العرض</option>
+                        <option value="غسيل خارجي">غسيل خارجي</option>
+                        <option value="غسيل داخلي">غسيل داخلي</option>
+                        <option value="غسيل شامل">غسيل شامل</option>
+                        <option value="اشتراك 4 مرات">اشتراك 4 مرات</option>
+                    </select>
+                    <input type="text" id="address" required class="w-full p-3 border-2 border-gray-300 rounded-lg" placeholder="عنوانك في الشروق">
+                    <input type="text" id="promo" class="w-full p-3 border-2 border-gray-300 rounded-lg" placeholder="كود الخصم NEW50 لأول مرة">
+                    <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-6 rounded-xl text-xl shadow-lg">
+                        📱 ابعت الحجز على واتساب
+                    </button>
+                </form>
+            </div>
+
+            <div class="text-center text-gray-600 mt-6">
+                <p class="font-bold text-lg">متاحين في مدينة الشروق فقط</p>
+                <p class="text-sm mt-2">مواعيد العمل: يومياً من 9 صباحاً لـ 9 مساءً</p>
+            </div>
+
+            <div class="bg-gray-50 rounded-xl p-6 mt-6 text-center">
+                <h3 class="font-bold text-lg text-gray-800 mb-3">امسح الكود واحجز</h3>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://karam141012Shorouk.github.io/ghselk-shorouk" alt="QR Code" class="mx-auto rounded-lg shadow-md bg-white p-2">
+            </div>
         </div>
-
-        <!-- فورم الحجز -->
-        <div class="bg-white rounded-2xl shadow-lg p-6 mb-6">
-            <h2 class="text-3xl font-black text-center text-blue-900 mb-6">احجز دلوقتي</h2>
-            
-            <form id="bookingForm" class="space-y-4">
-                <input type="text" id="name" placeholder="الاسم" required class="w-full p-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 outline-none">
-                
-                <input type="tel" id="phone" placeholder="رقم الموبايل" required class="w-full p-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 outline-none">
-                
-                <input type="text" id="address" placeholder="العنوان بالتفصيل" required class="w-full p-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 outline-none">
-                
-                <select id="service" required class="w-full p-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 outline-none">
-                    <option value="">اختار نوع الخدمة</option>
-                    <option value="150">غسلة عادية - 150 ج.م</option>
-                    <option value="250">غسلة شاملة - 250 ج.م</option>
-                    <option value="800">باقة شهرية - 800 ج.م</option>
-                </select>
-
-                <input type="text" id="discount" placeholder="كود الخصم - اختياري" class="w-full p-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 outline-none">
-                
-                <div id="priceDisplay" class="bg-green-50 p-4 rounded-lg text-center hidden">
-                    <p class="text-lg text-gray-700">السعر بعد الخصم:</p>
-                    <p class="text-3xl font-black text-green-600" id="finalPrice"></p>
-                </div>
-
-                <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-black text-xl py-4 rounded-lg transition">
-                    احجز على واتساب 📱
-                </button>
-            </form>
-        </div>
-
-        <!-- تواصل معانا -->
-        <div class="text-center bg-white rounded-2xl shadow-lg p-6">
-            <h3 class="text-2xl font-black text-blue-900 mb-4">كلمنا مباشر</h3>
-            <a href="https://wa.me/201127915966" class="inline-block bg-green-500 hover:bg-green-600 text-white font-black text-xl px-8 py-3 rounded-lg transition">
-                واتساب: 01127915966
-            </a>
-        </div>
-
     </div>
 
     <script>
-        // حساب الخصم 20%
-        document.getElementById('discount').addEventListener('input', function() {
-            const service = document.getElementById('service').value;
-            const discount = this.value.trim().toUpperCase();
-            
-            if (service && discount === 'NEW50') {
-                const price = parseInt(service);
-                const finalPrice = price - (price * 0.20);
-                document.getElementById('finalPrice').textContent = finalPrice + ' ج.م';
-                document.getElementById('priceDisplay').classList.remove('hidden');
-            } else {
-                document.getElementById('priceDisplay').classList.add('hidden');
-            }
-        });
-
-        document.getElementById('service').addEventListener('change', function() {
-            document.getElementById('discount').dispatchEvent(new Event('input'));
-        });
-
-        // ارسال على واتساب
-        document.getElementById('bookingForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
+        function sendToWhatsApp(event) {
+            event.preventDefault();
             const name = document.getElementById('name').value;
             const phone = document.getElementById('phone').value;
+            const carType = document.getElementById('carType').value;
+            const service = document.getElementById('service').value;
             const address = document.getElementById('address').value;
-            const serviceSelect = document.getElementById('service');
-            const serviceName = serviceSelect.options[serviceSelect.selectedIndex].text;
-            const discount = document.getElementById('discount').value.trim().toUpperCase();
+            const promo = document.getElementById('promo').value;
             
-            let price = parseInt(serviceSelect.value);
-            let priceText = price + ' ج.م';
+            let message = `*حجز جديد - غسيلك لعندك*%0A%0Aالاسم: ${name}%0Aالموبايل: ${phone}%0Aنوع العربية: ${carType}%0Aالخدمة: ${service}%0Aالعنوان: ${address}`;
+            if(promo) message += `%0Aكود الخصم: ${promo}`;
             
-            if (discount === 'NEW50') {
-                price = price - (price * 0.20);
-                priceText = price + ' ج.م بعد خصم 20%';
-            }
-            
-            const message = `مرحبا، عايز احجز غسيل سيارة\n\nالاسم: ${name}\nالموبايل: ${phone}\nالعنوان: ${address}\nالخدمة: ${serviceName}\nالسعر: ${priceText}\nكود الخصم: ${discount || 'لا يوجد'}`;
-            
-            const whatsappUrl = `https://wa.me/201127915966?text=${encodeURIComponent(message)}`;
-            window.open(whatsappUrl, '_blank');
-        });
+            window.open(`https://wa.me/201127915966?text=${message}`, '_blank');
+        }
     </script>
-
 </body>
-</html>
+    </html>
