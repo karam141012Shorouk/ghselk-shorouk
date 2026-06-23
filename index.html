@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>غسيلك لعندك - خدمة غسيل السيارات</title>
+    <title>غسيلك لعندك - خدمة غسيل السيارات بالشروق</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
@@ -19,12 +19,24 @@
             <div class="bg-red-500 text-white text-center py-2 rounded-lg mb-6 font-bold">
                 🔥 خصم 20% على أول غسلة بكود: NEW50 🔥
             </div>
+
+            <!-- ليه تختارنا -->
+            <div class="bg-blue-50 rounded-xl p-6 mb-6 border-r-4 border-blue-500">
+                <h2 class="text-2xl font-bold text-blue-800 mb-4 text-center">✨ ليه غسيلك لعندك؟</h2>
+                <ul class="space-y-2 text-lg">
+                    <li>✅ <strong>غسيل خارجي بفوم SONAX الألماني</strong> - آمن على البوية 100%</li>
+                    <li>✅ <strong>تلميع جنوط وإطارات</strong> بمنظف SONAX + جل Flamingo</li>
+                    <li>✅ <strong>تنظيف وتعطير داخلي كامل</strong> بملمع تابلوه Flamingo و Mafra</li>
+                    <li>✅ <strong>طبقة حماية شمعية</strong> بواكس Turtle Wax Ceramic</li>
+                    <li>✅ <strong>بستخدم مسدس ضغط Total</strong> وعدة احترافية كاملة</li>
+                    <li>✅ <strong>ضبط ضغط الإطارات مجاناً</strong> مع الغسلة الشاملة</li>
+                </ul>
+            </div>
             
             <!-- قسم الأسعار -->
             <div class="bg-green-50 rounded-xl p-6 mb-6 border-r-4 border-green-500">
-                <h2 class="text-2xl font-bold text-green-800 mb-4 text-center">💰 عروضنا أرخص من أي حد</h2>
+                <h2 class="text-2xl font-bold text-green-800 mb-4 text-center">💰 عروضنا</h2>
                 
-                <!-- سيدان -->
                 <h3 class="text-xl font-bold text-purple-700 mb-3">🚗 العربيات السيدان:</h3>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mb-6">
                     <div class="bg-white rounded-lg p-4 shadow-md text-center">
@@ -38,11 +50,9 @@
                     <div class="bg-white rounded-lg p-4 shadow-md text-center border-2 border-yellow-400">
                         <h4 class="font-bold text-purple-700 mb-1">شامل</h4>
                         <p class="text-3xl font-black text-green-600">250 ج.م</p>
-                        <p class="text-xs text-red-500 line-through">بدل 265</p>
                     </div>
                 </div>
 
-                <!-- SUV -->
                 <h3 class="text-xl font-bold text-purple-700 mb-3">🚙 العربيات الـ SUV:</h3>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mb-4">
                     <div class="bg-white rounded-lg p-4 shadow-md text-center">
@@ -56,21 +66,19 @@
                     <div class="bg-white rounded-lg p-4 shadow-md text-center border-2 border-yellow-400">
                         <h4 class="font-bold text-purple-700 mb-1">شامل</h4>
                         <p class="text-3xl font-black text-green-600">290 ج.م</p>
-                        <p class="text-xs text-red-500 line-through">بدل 310</p>
                     </div>
                 </div>
 
-                <!-- اشتراكات -->
                 <div class="bg-yellow-50 rounded-lg p-4 mt-4">
                     <h4 class="font-bold text-center text-yellow-800 mb-2">🎁 اشتراك 4 غسلات شامل</h4>
-                    <p class="text-center text-2xl font-bold">سيدان: <span class="text-green-600">800 ج.م</span> <span class="text-sm text-red-500 line-through">848</span></p>
-                    <p class="text-center text-2xl font-bold">SUV: <span class="text-green-600">920 ج.م</span> <span class="text-sm text-red-500 line-through">992</span></p>
+                    <p class="text-center text-2xl font-bold">سيدان: <span class="text-green-600">800 ج.م</span></p>
+                    <p class="text-center text-2xl font-bold">SUV: <span class="text-green-600">920 ج.م</span></p>
                 </div>
             </div>
 
             <!-- فورم الحجز -->
-            <div class="bg-blue-50 rounded-xl p-6 mb-6 border-r-4 border-blue-500">
-                <h2 class="text-2xl font-bold text-blue-800 mb-4 text-center">📝 احجز الآن</h2>
+            <div class="bg-purple-50 rounded-xl p-6 mb-6 border-r-4 border-purple-500">
+                <h2 class="text-2xl font-bold text-purple-800 mb-4 text-center">📝 احجز الآن</h2>
                 <form onsubmit="sendToWhatsApp(event)" class="space-y-3">
                     <input type="text" id="name" required class="w-full p-3 border-2 border-gray-300 rounded-lg" placeholder="اسمك">
                     <input type="tel" id="phone" required class="w-full p-3 border-2 border-gray-300 rounded-lg" placeholder="رقم موبايلك 01xxxxxxxxx">
@@ -100,8 +108,9 @@
             </div>
 
             <div class="bg-gray-50 rounded-xl p-6 mt-6 text-center">
-                <h3 class="font-bold text-lg text-gray-800 mb-3">امسح الكود واحجز</h3>
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://karam141012Shorouk.github.io/ghselk-shorouk" alt="QR Code" class="mx-auto rounded-lg shadow-md bg-white p-2">
+                <h3 class="font-bold text-lg text-gray-800 mb-3">امسح الكود وادخل على الموقع مباشرة</h3>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://karam141012Shorouk.github.io/ghselk-shorouk" alt="QR Code" class="mx-auto rounded-lg shadow-md bg-white p-2">
+                <p class="text-sm text-gray-500 mt-2">https://karam141012Shorouk.github.io/ghselk-shorouk</p>
             </div>
         </div>
     </div>
@@ -123,4 +132,4 @@
         }
     </script>
 </body>
-    </html>
+</html>
