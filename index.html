@@ -30,34 +30,24 @@
     <div class="max-w-4xl mx-auto no-print">
         <div class="bg-gray-900 rounded-3xl shadow-2xl p-6">
             
-            <!-- الشعار الجديد SVG - مظبوط 100% -->
+            <!-- الشعار -->
             <div class="text-center mb-6">
-                <svg width="160" height="160" viewBox="0 0 200 200" class="mx-auto drop-shadow-2xl">
+                <svg width="140" height="140" viewBox="0 0 200 200" class="mx-auto drop-shadow-2xl">
                     <defs>
                         <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
                             <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
                             <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
                         </linearGradient>
-                        <filter id="shadow">
-                            <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.3"/>
-                        </filter>
                     </defs>
-                    <!-- دايرة الخلفية -->
-                    <circle cx="100" cy="100" r="95" fill="url(#logoGradient)" stroke="white" stroke-width="4" filter="url(#shadow)"/>
-                    <!-- عربية -->
+                    <circle cx="100" cy="100" r="95" fill="url(#logoGradient)" stroke="white" stroke-width="4"/>
                     <path d="M 60 110 L 65 90 L 80 80 L 120 80 L 135 90 L 140 110 L 140 125 L 60 125 Z" fill="white"/>
                     <rect x="70" y="85" width="20" height="15" rx="2" fill="#667eea"/>
                     <rect x="110" y="85" width="20" height="15" rx="2" fill="#667eea"/>
                     <circle cx="75" cy="125" r="8" fill="#764ba2"/>
                     <circle cx="125" cy="125" r="8" fill="#764ba2"/>
-                    <!-- قطرات مية -->
                     <circle cx="100" cy="65" r="5" fill="#4FC3F7"/>
                     <circle cx="85" cy="70" r="3" fill="#4FC3F7"/>
                     <circle cx="115" cy="70" r="3" fill="#4FC3F7"/>
-                    <!-- لمعة -->
-                    <path d="M 145 75 L 150 70 L 155 75 L 150 80 Z" fill="white"/>
-                    <path d="M 50 75 L 55 70 L 60 75 L 55 80 Z" fill="white"/>
-                    <!-- النص -->
                     <text x="100" y="48" font-family="Cairo" font-size="24" font-weight="900" fill="white" text-anchor="middle">غسيلك لعندك</text>
                     <text x="100" y="172" font-family="Cairo" font-size="14" font-weight="700" fill="white" text-anchor="middle">الشروق</text>
                 </svg>
@@ -81,21 +71,70 @@
                 <p class="text-xl font-black">✓ أسعارنا أرخص من أي تطبيق</p>
             </div>
 
-            <!-- الأسعار -->
+            <!-- الباقات الجديدة -->
             <div class="bg-gray-800 rounded-xl p-4 mb-4 border-2 border-green-500">
-                <h2 class="text-2xl font-black text-green-400 mb-3 text-center">★ أسعارنا ★</h2>
-                <div class="grid grid-cols-2 gap-3">
-                    <div class="bg-gray-700 rounded-lg p-3">
-                        <h4 class="font-black text-purple-400 mb-2 text-center text-xl">سيدان</h4>
-                        <p class="text-white text-lg">خارجي: <strong class="text-green-400">120 ج.م</strong></p>
-                        <p class="text-white text-lg">داخلي: <strong class="text-green-400">120 ج.م</strong></p>
-                        <p class="text-xl text-white">شامل: <strong class="text-yellow-400">230 ج.م</strong></p>
+                <h2 class="text-2xl font-black text-green-400 mb-4 text-center">★ باقات التوفير ★</h2>
+                
+                <!-- باقة غسلة واحدة -->
+                <div class="bg-gray-700 rounded-lg p-4 mb-3">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full">غسلة واحدة</span>
+                        <p class="text-yellow-400 font-black text-lg">الأكثر طلباً</p>
                     </div>
-                    <div class="bg-gray-700 rounded-lg p-3">
-                        <h4 class="font-black text-purple-400 mb-2 text-center text-xl">SUV</h4>
-                        <p class="text-white text-lg">خارجي: <strong class="text-green-400">150 ج.م</strong></p>
-                        <p class="text-white text-lg">داخلي: <strong class="text-green-400">150 ج.م</strong></p>
-                        <p class="text-xl text-white">شامل: <strong class="text-yellow-400">270 ج.م</strong></p>
+                    <h4 class="font-black text-white text-xl mb-3">غسيل شامل خارجي وداخلي</h4>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="bg-gray-600 rounded p-2 text-center">
+                            <p class="text-purple-300 font-bold">سيدان</p>
+                            <p class="text-3xl font-black text-white">230 ج</p>
+                        </div>
+                        <div class="bg-gray-600 rounded p-2 text-center">
+                            <p class="text-purple-300 font-bold">SUV</p>
+                            <p class="text-3xl font-black text-white">270 ج</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- باقة 4 مرات -->
+                <div class="bg-gradient-to-br from-purple-900 to-purple-800 rounded-lg p-4 mb-3 border-2 border-yellow-400">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="bg-yellow-400 text-purple-900 text-xs font-black px-3 py-1 rounded-full">4 غسلات</span>
+                        <p class="text-green-400 font-black text-sm">وفر لحد 160 ج</p>
+                    </div>
+                    <h4 class="font-black text-white text-xl mb-3">اشتراك 4 غسلات شاملة</h4>
+                    <p class="text-gray-300 text-sm mb-3">صالح لمدة شهرين - بننسق معاك كل غسلة</p>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="bg-purple-700 rounded p-2 text-center">
+                            <p class="text-purple-200 font-bold">سيدان</p>
+                            <p class="text-gray-400 text-sm line-through">920 ج</p>
+                            <p class="text-3xl font-black text-yellow-400">780 ج</p>
+                        </div>
+                        <div class="bg-purple-700 rounded p-2 text-center">
+                            <p class="text-purple-200 font-bold">SUV</p>
+                            <p class="text-gray-400 text-sm line-through">1080 ج</p>
+                            <p class="text-3xl font-black text-yellow-400">920 ج</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- باقة 6 مرات -->
+                <div class="bg-gradient-to-br from-yellow-900 to-orange-900 rounded-lg p-4 border-2 border-yellow-400">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="bg-green-500 text-white text-xs font-black px-3 py-1 rounded-full">6 غسلات</span>
+                        <p class="text-green-400 font-black text-sm">وفر لحد 330 ج</p>
+                    </div>
+                    <h4 class="font-black text-white text-xl mb-3">اشتراك 6 غسلات شاملة</h4>
+                    <p class="text-gray-300 text-sm mb-3">صالح لمدة 3 شهور - أفضل قيمة</p>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="bg-orange-800 rounded p-2 text-center">
+                            <p class="text-orange-200 font-bold">سيدان</p>
+                            <p class="text-gray-400 text-sm line-through">1380 ج</p>
+                            <p class="text-3xl font-black text-yellow-400">1100 ج</p>
+                        </div>
+                        <div class="bg-orange-800 rounded p-2 text-center">
+                            <p class="text-orange-200 font-bold">SUV</p>
+                            <p class="text-gray-400 text-sm line-through">1620 ج</p>
+                            <p class="text-3xl font-black text-yellow-400">1290 ج</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -121,11 +160,13 @@
                 <input type="text" id="name" required class="w-full p-3 bg-gray-700 text-white border-2 border-gray-600 rounded-lg text-lg" placeholder="اسمك">
                 <input type="tel" id="phone" required class="w-full p-3 bg-gray-700 text-white border-2 border-gray-600 rounded-lg text-lg" placeholder="رقم موبايلك">
                 <select id="service" required class="w-full p-3 bg-gray-700 text-white border-2 border-gray-600 rounded-lg text-lg">
-                    <option value="">اختار العرض</option>
-                    <option value="غسيل شامل سيدان 230ج">شامل سيدان 230ج</option>
-                    <option value="غسيل شامل SUV 270ج">شامل SUV 270ج</option>
-                    <option value="غسيل خارجي سيدان 120ج">خارجي سيدان 120ج</option>
-                    <option value="غسيل خارجي SUV 150ج">خارجي SUV 150ج</option>
+                    <option value="">اختار الباقة</option>
+                    <option value="غسلة واحدة سيدان 230ج">غسلة واحدة - سيدان 230ج</option>
+                    <option value="غسلة واحدة SUV 270ج">غسلة واحدة - SUV 270ج</option>
+                    <option value="اشتراك 4 مرات سيدان 780ج">اشتراك 4 مرات - سيدان 780ج</option>
+                    <option value="اشتراك 4 مرات SUV 920ج">اشتراك 4 مرات - SUV 920ج</option>
+                    <option value="اشتراك 6 مرات سيدان 1100ج">اشتراك 6 مرات - سيدان 1100ج</option>
+                    <option value="اشتراك 6 مرات SUV 1290ج">اشتراك 6 مرات - SUV 1290ج</option>
                 </select>
                 <input type="text" id="address" required class="w-full p-3 bg-gray-700 text-white border-2 border-gray-600 rounded-lg text-lg" placeholder="عنوانك في الشروق">
                 <input type="text" id="promo" class="w-full p-3 bg-purple-900 text-white border-2 border-purple-500 rounded-lg text-lg" placeholder="كود الخصم: NEW50">
@@ -184,7 +225,7 @@
             let message = `*حجز جديد - غسيلك لعندك*%0A%0A`;
             message += `الاسم: ${name}%0A`;
             message += `الموبايل: ${phone}%0A`;
-            message += `الخدمة: ${service}%0A`;
+            message += `الباقة: ${service}%0A`;
             message += `العنوان: ${address}`;
             
             if(promo) {
@@ -210,4 +251,4 @@
         }
     </script>
 </body>
-                                                                </html>
+                                </html>
