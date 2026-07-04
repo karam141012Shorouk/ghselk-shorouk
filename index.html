@@ -1,237 +1,96 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>غسيلك لعندك - غسيل سيارات متنقل الشروق</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
-<style>*{font-family:'Cairo',sans-serif}body{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%)}@media print{body{background:white!important}.no-print{display:none!important}}</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>غسيلك لعندك - مغسلة متنقلة الشروق</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Cairo', sans-serif; background: #f5f5f5; color: #333; }
+    .container { max-width: 600px; margin: auto; padding: 20px; }
+    .countdown { background: #d32f2f; color: white; padding: 15px; text-align: center; font-size: 20px; font-weight: 900; position: sticky; top: 0; z-index: 1000; }
+    .countdown span { display: block; font-size: 16px; margin-top: 5px; font-weight: 400; }
+    .header { text-align: center; padding: 30px 0; background: white; margin: 20px 0; border-radius: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    .header h1 { font-size: 32px; color: #1976d2; margin-bottom: 10px; font-weight: 900; }
+    .header p { font-size: 18px; color: #555; }
+    .offers { display: flex; gap: 15px; flex-direction: column; }
+    .offer-card { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border: 3px solid #1976d2; }
+    .offer-card.hot { border-color: #ff9800; position: relative; }
+    .badge { position: absolute; top: -12px; right: 20px; background: #ff9800; color: white; padding: 5px 15px; border-radius: 20px; font-size: 14px; font-weight: 700; }
+    .offer-card h2 { font-size: 24px; margin-bottom: 10px; color: #1976d2; font-weight: 700; }
+    .price { font-size: 40px; font-weight: 900; color: #d32f2f; margin: 15px 0; }
+    .price small { font-size: 18px; color: #777; text-decoration: line-through; margin-right: 10px; }
+    .offer-card ul { list-style: none; margin: 20px 0; }
+    .offer-card li { padding: 8px 0; font-size: 16px; }
+    .offer-card li:before { content: "✅ "; }
+    .whatsapp-btn { display: block; background: #25D366; color: white; text-align: center; padding: 18px; border-radius: 50px; font-size: 20px; font-weight: 700; text-decoration: none; margin-top: 15px; box-shadow: 0 4px 15px rgba(37,211,102,0.4); }
+    .whatsapp-float { position: fixed; bottom: 20px; left: 20px; background: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 999; text-decoration: none; }
+    .coverage { background: white; padding: 20px; border-radius: 15px; margin: 20px 0; text-align: center; }
+    .coverage h3 { margin-bottom: 10px; color: #1976d2; font-weight: 700; }
+    .footer { text-align: center; padding: 20px; color: #777; font-size: 14px; }
+  </style>
 </head>
-<body class="p-2">
-<div class="max-w-4xl mx-auto no-print mb-2">
-<button onclick="window.print()" class="w-full bg-white text-purple-700 font-black py-3 rounded-xl text-xl shadow-2xl hover:bg-purple-50">🖨️ طباعة الفلاير A4</button>
-</div>
-<div class="max-w-4xl mx-auto no-print">
-<div class="bg-gray-900 rounded-2xl shadow-2xl p-3">
-<div class="text-center mb-3">
-<svg width="100" height="100" viewBox="0 0 200 200" class="mx-auto drop-shadow-2xl">
-<defs><linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#667eea;stop-opacity:1"/><stop offset="100%" style="stop-color:#764ba2;stop-opacity:1"/></linearGradient></defs>
-<circle cx="100" cy="100" r="95" fill="url(#logoGradient)" stroke="white" stroke-width="4"/>
-<path d="M 60 110 L 65 90 L 80 80 L 120 80 L 135 90 L 140 110 L 140 125 L 60 125 Z" fill="white"/>
-<rect x="70" y="85" width="20" height="15" rx="2" fill="#667eea"/>
-<rect x="110" y="85" width="20" height="15" rx="2" fill="#667eea"/>
-<circle cx="75" cy="125" r="8" fill="#764ba2"/>
-<circle cx="125" cy="125" r="8" fill="#764ba2"/>
-<circle cx="100" cy="65" r="5" fill="#4FC3F7"/>
-<circle cx="85" cy="70" r="3" fill="#4FC3F7"/>
-<circle cx="115" cy="70" r="3" fill="#4FC3F7"/>
-<text x="100" y="48" font-family="Cairo" font-size="24" font-weight="900" fill="white" text-anchor="middle">غسيلك لعندك</text>
-<text x="100" y="172" font-family="Cairo" font-size="14" font-weight="700" fill="white" text-anchor="middle">الشروق</text>
-</svg>
-</div>
-<div class="bg-gray-800 border-r-4 border-purple-500 rounded-lg p-2 mb-2">
-<p class="text-base font-black text-purple-300 text-center">وقتك غالي مينفعش يضيع في زحمة</p>
-<p class="text-sm font-bold text-purple-200 text-center mt-1">وعشان كده بنجيلك لحد عندك بفريق مدرب يهتم بأصغر التفاصيل</p>
-</div>
-<div class="bg-gradient-to-r from-green-600 to-green-700 text-white text-center py-2 rounded-lg mb-2 shadow-lg">
-<p class="text-lg font-black">نجيلك نغسل عربيتك في الوقت اللي يناسبك ⏰</p>
-</div>
-<div class="bg-red-500 text-white text-center py-2 rounded-lg mb-2 animate-pulse">
-<p class="text-lg font-black">🔥 عرض خاص: غسيل خارجي 120ج بس 🔥</p>
-<p class="text-base font-bold">خصم 20% على أول غسلة بكود: NEW50</p>
-</div>
-<div class="bg-purple-600 text-white text-center py-2 rounded-lg mb-2">
-<p class="text-base font-black">✓ أسعارنا أرخص من أي تطبيق</p>
-</div>
-<div class="bg-gray-800 rounded-lg p-2 mb-2 border-2 border-green-500">
-<h2 class="text-xl font-black text-green-400 mb-2 text-center">★ باقات الغسيل الشامل ★</h2>
-<p class="text-center text-gray-300 mb-2 text-xs">خارجي + داخلي + تلميع + ضبط إطارات</p>
-<div class="bg-gray-700 rounded-lg p-2 mb-2">
-<div class="flex items-center justify-between mb-1">
-<span class="bg-blue-500 text-white text-xs font-bold px-2 py-0.5 rounded-full">غسلة واحدة</span>
-<p class="text-yellow-400 font-black text-sm">الأكثر طلباً</p>
-</div>
-<div class="grid grid-cols-2 gap-2">
-<div class="bg-gray-600 rounded p-1.5 text-center">
-<p class="text-purple-300 font-bold text-sm">سيدان</p>
-<p class="text-2xl font-black text-white">230 ج</p>
-</div>
-<div class="bg-gray-600 rounded p-1.5 text-center">
-<p class="text-purple-300 font-bold text-sm">SUV</p>
-<p class="text-2xl font-black text-white">270 ج</p>
-</div>
-</div>
-</div>
-<div class="bg-gradient-to-br from-purple-900 to-purple-800 rounded-lg p-2 mb-2 border border-yellow-400">
-<div class="flex items-center justify-between mb-1">
-<span class="bg-yellow-400 text-purple-900 text-xs font-black px-2 py-0.5 rounded-full">4 غسلات</span>
-<p class="text-green-400 font-black text-xs">وفر لحد 160 ج</p>
-</div>
-<p class="text-gray-300 text-xs mb-1">صالح لمدة شهرين</p>
-<div class="grid grid-cols-2 gap-2">
-<div class="bg-purple-700 rounded p-1.5 text-center">
-<p class="text-purple-200 font-bold text-sm">سيدان</p>
-<p class="text-gray-400 text-xs line-through">920 ج</p>
-<p class="text-2xl font-black text-yellow-400">780 ج</p>
-</div>
-<div class="bg-purple-700 rounded p-1.5 text-center">
-<p class="text-purple-200 font-bold text-sm">SUV</p>
-<p class="text-gray-400 text-xs line-through">1080 ج</p>
-<p class="text-2xl font-black text-yellow-400">920 ج</p>
-</div>
-</div>
-</div>
-<div class="bg-gradient-to-br from-yellow-900 to-orange-900 rounded-lg p-2 border border-yellow-400">
-<div class="flex items-center justify-between mb-1">
-<span class="bg-green-500 text-white text-xs font-black px-2 py-0.5 rounded-full">6 غسلات</span>
-<p class="text-green-400 font-black text-xs">وفر لحد 330 ج</p>
-</div>
-<p class="text-gray-300 text-xs mb-1">صالح لمدة 3 شهور - أفضل قيمة</p>
-<div class="grid grid-cols-2 gap-2">
-<div class="bg-orange-800 rounded p-1.5 text-center">
-<p class="text-orange-200 font-bold text-sm">سيدان</p>
-<p class="text-gray-400 text-xs line-through">1380 ج</p>
-<p class="text-2xl font-black text-yellow-400">1100 ج</p>
-</div>
-<div class="bg-orange-800 rounded p-1.5 text-center">
-<p class="text-orange-200 font-bold text-sm">SUV</p>
-<p class="text-gray-400 text-xs line-through">1620 ج</p>
-<p class="text-2xl font-black text-yellow-400">1290 ج</p>
-</div>
-</div>
-</div>
-</div>
-<div class="bg-gray-800 rounded-lg p-2 mb-2 border-2 border-blue-500">
-<h2 class="text-xl font-black text-blue-400 mb-2 text-center">★ باقات الغسيل الخارجي ★</h2>
-<p class="text-center text-gray-300 mb-2 text-xs">غسيل خارجي + تلميع + جنوط</p>
-<div class="bg-gray-700 rounded-lg p-2 mb-2">
-<div class="flex items-center justify-between mb-1">
-<span class="bg-blue-500 text-white text-xs font-bold px-2 py-0.5 rounded-full">غسلة واحدة</span>
-<p class="text-green-400 font-black text-sm">سريع وموفر</p>
-</div>
-<div class="grid grid-cols-2 gap-2">
-<div class="bg-gray-600 rounded p-1.5 text-center">
-<p class="text-blue-300 font-bold text-sm">سيدان</p>
-<p class="text-2xl font-black text-white">120 ج</p>
-</div>
-<div class="bg-gray-600 rounded p-1.5 text-center">
-<p class="text-blue-300 font-bold text-sm">SUV</p>
-<p class="text-2xl font-black text-white">150 ج</p>
-</div>
-</div>
-</div>
-<div class="bg-gradient-to-br from-blue-900 to-cyan-800 rounded-lg p-2 mb-2 border border-cyan-400">
-<div class="flex items-center justify-between mb-1">
-<span class="bg-cyan-400 text-blue-900 text-xs font-black px-2 py-0.5 rounded-full">4 غسلات</span>
-<p class="text-green-400 font-black text-xs">وفر لحد 80 ج</p>
-</div>
-<p class="text-gray-300 text-xs mb-1">صالح لمدة شهرين</p>
-<div class="grid grid-cols-2 gap-2">
-<div class="bg-blue-700 rounded p-1.5 text-center">
-<p class="text-blue-200 font-bold text-sm">سيدان</p>
-<p class="text-gray-400 text-xs line-through">480 ج</p>
-<p class="text-2xl font-black text-cyan-400">420 ج</p>
-</div>
-<div class="bg-blue-700 rounded p-1.5 text-center">
-<p class="text-blue-200 font-bold text-sm">SUV</p>
-<p class="text-gray-400 text-xs line-through">600 ج</p>
-<p class="text-2xl font-black text-cyan-400">520 ج</p>
-</div>
-</div>
-</div>
-<div class="bg-gradient-to-br from-cyan-900 to-teal-900 rounded-lg p-2 border border-teal-400">
-<div class="flex items-center justify-between mb-1">
-<span class="bg-teal-400 text-cyan-900 text-xs font-black px-2 py-0.5 rounded-full">6 غسلات</span>
-<p class="text-green-400 font-black text-xs">وفر لحد 180 ج</p>
-</div>
-<p class="text-gray-300 text-xs mb-1">صالح لمدة 3 شهور</p>
-<div class="grid grid-cols-2 gap-2">
-<div class="bg-teal-800 rounded p-1.5 text-center">
-<p class="text-teal-200 font-bold text-sm">سيدان</p>
-<p class="text-gray-400 text-xs line-through">720 ج</p>
-<p class="text-2xl font-black text-teal-400">600 ج</p>
-</div>
-<div class="bg-teal-800 rounded p-1.5 text-center">
-<p class="text-teal-200 font-bold text-sm">SUV</p>
-<p class="text-gray-400 text-xs line-through">900 ج</p>
-<p class="text-2xl font-black text-teal-400">720 ج</p>
-</div>
-</div>
-</div>
-</div>
-<div class="bg-gray-800 rounded-lg p-2 mb-2">
-<h2 class="text-lg font-black text-blue-400 mb-2 text-center">★ ليه تختارنا؟ ★</h2>
-<div class="grid grid-cols-2 gap-1 text-xs font-bold text-white">
-<p>✓ شامبو عالي الرغوة للحماية</p>
-<p>✓ منظف جنوط احترافي</p>
-<p>✓ ملمع كاوتش يدوم طويلاً</p>
-<p>✓ واكس تلميع وحماية للدهان</p>
-<p>✓ مسدس ضغط آمن على الدهان</p>
-<p>✓ فوط مايكروفايبر ناعمة صفر خدوش</p>
-<p>✓ بخاخات وأدوات مخصصة</p>
-<p>✓ ضبط ضغط الإطارات مجاناً</p>
-</div>
-</div>
-<form onsubmit="sendToWhatsApp(event)" class="space-y-2 bg-gray-800 rounded-lg p-3">
-<h2 class="text-xl font-black text-purple-400 mb-1 text-center">📝 احجز الآن</h2>
-<input type="text" id="name" required class="w-full p-2 bg-gray-700 text-white border-2 border-gray-600 rounded-lg text-base" placeholder="اسمك">
-<input type="tel" id="phone" required class="w-full p-2 bg-gray-700 text-white border-2 border-gray-600 rounded-lg text-base" placeholder="رقم موبايلك">
-<select id="service" required class="w-full p-2 bg-gray-700 text-white border-2 border-gray-600 rounded-lg text-base">
-<option value="">اختار الباقة</option>
-<optgroup label="— غسيل شامل —">
-<option value="شامل - غسلة واحدة سيدان 230ج">شامل - غسلة واحدة سيدان 230ج</option>
-<option value="شامل - غسلة واحدة SUV 270ج">شامل - غسلة واحدة SUV 270ج</option>
-<option value="شامل - 4 غسلات سيدان 780ج">شامل - 4 غسلات سيدان 780ج</option>
-<option value="شامل - 4 غسلات SUV 920ج">شامل - 4 غسلات SUV 920ج</option>
-<option value="شامل - 6 غسلات سيدان 1100ج">شامل - 6 غسلات سيدان 1100ج</option>
-<option value="شامل - 6 غسلات SUV 1290ج">شامل - 6 غسلات SUV 1290ج</option>
-</optgroup>
-<optgroup label="— غسيل خارجي —">
-<option value="خارجي - غسلة واحدة سيدان 120ج">خارجي - غسلة واحدة سيدان 120ج</option>
-<option value="خارجي - غسلة واحدة SUV 150ج">خارجي - غسلة واحدة SUV 150ج</option>
-<option value="خارجي - 4 غسلات سيدان 420ج">خارجي - 4 غسلات سيدان 420ج</option>
-<option value="خارجي - 4 غسلات SUV 520ج">خارجي - 4 غسلات SUV 520ج</option>
-<option value="خارجي - 6 غسلات سيدان 600ج">خارجي - 6 غسلات سيدان 600ج</option>
-<option value="خارجي - 6 غسلات SUV 720ج">خارجي - 6 غسلات SUV 720ج</option>
-</optgroup>
-</select>
-<input type="text" id="address" required class="w-full p-2 bg-gray-700 text-white border-2 border-gray-600 rounded-lg text-base" placeholder="عنوانك في الشروق">
-<input type="text" id="promo" class="w-full p-2 bg-purple-900 text-white border-2 border-purple-500 rounded-lg text-base" placeholder="كود الخصم: NEW50">
-<button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white font-black py-3 rounded-lg text-lg">📱 ابعت الحجز على واتساب</button>
-</form>
-<div class="bg-gray-800 rounded-lg p-2 mt-2">
-<h3 class="text-lg font-black text-yellow-400 mb-2 text-center">💳 طرق الدفع المتاحة</h3>
-<div class="grid grid-cols-3 gap-2 text-center">
-<div class="bg-gray-700 rounded-lg p-2">
-<p class="text-2xl mb-0.5">💵</p>
-<p class="text-white font-bold text-sm">كاش</p>
-</div>
-<div class="bg-gray-700 rounded-lg p-2">
-<p class="text-2xl mb-0.5">📱</p>
-<p class="text-white font-bold text-sm">انستا باي</p>
-</div>
-<div class="bg-gray-700 rounded-lg p-2">
-<p class="text-2xl mb-0.5">💳</p>
-<p class="text-white font-bold text-sm">محفظة</p>
-</div>
-</div>
-</div>
-<div class="mt-2">
-<button onclick="shareWebsite()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-black py-3 rounded-lg text-lg">📤 رشح الموقع لأصحابك</button>
-</div>
-<div class="text-center text-gray-400 mt-3">
-<p class="font-bold text-base">واتساب: 01127915966</p>
-<p class="text-xs mt-0.5">يومياً 9 صباحاً - 9 مساءً | الشروق فقط</p>
-</div>
-<div class="text-center mt-4 pb-1">
-<p class="text-lg font-bold text-purple-300">شكرا لتعاونكم معانا 🌹</p>
-</div>
-</div>
-</div>
-<script>
-function sendToWhatsApp(event){event.preventDefault();const name=document.getElementById('name').value;const phone=document.getElementById('phone').value;const service=document.getElementById('service').value;const address=document.getElementById('address').value;const promo=document.getElementById('promo').value;let message=`*حجز جديد - غسيلك لعندك*%0A%0A`;message+=`الاسم: ${name}%0A`;message+=`الموبايل: ${phone}%0A`;message+=`الباقة: ${service}%0A`;message+=`العنوان: ${address}`;if(promo){message+=`%0Aكود الخصم: ${promo}`}window.open(`https://wa.me/201127915966?text=${message}`,'_blank')}
-function shareWebsite(){const shareData={title:'غسيلك لعندك - غسيل سيارات متنقل',text:'وقتك غالي! بنجيلك لحد عندك نغسل عربيتك بأدوات احترافية. غسيل خارجي 120ج بس + خصم 20% بكود NEW50',url:'https://karam141012Shorouk.github.io/ghselk-shorouk'};if(navigator.share){navigator.share(shareData)}else{navigator.clipboard.writeText(shareData.url);alert('تم نسخ رابط الموقع! ابعته لأصحابك على واتساب 📱')}}
-</script>
+<body>
+  <div class="countdown" id="countdown">
+    🔥 عرض الافتتاح هينتهي خلال: 
+    <span id="timer">جاري التحميل...</span>
+  </div>
+  <div class="container">
+    <div class="header">
+      <h1>🚗 غسيلك لعندك</h1>
+      <p>أول مغسلة سيارات متنقلة في الشروق<br>بنجيلك لحد باب البيت</p>
+    </div>
+    <div class="offers">
+      <div class="offer-card hot">
+        <span class="badge">الأكثر طلباً</span>
+        <h2>غسيل شامل بره وجوه</h2>
+        <div class="price"><small>230ج</small> 180ج <span style="font-size:18px;">سيدان</span></div>
+        <div class="price">220ج <span style="font-size:18px;">SUV</span></div>
+        <ul>
+          <li>غسيل بودي + مكنسة صالون</li>
+          <li>تلميع تابلوه + تلميع كاوتش</li>
+          <li>فواحة هدية</li>
+          <li>الدفع بعد ما تعجبك النتيجة</li>
+        </ul>
+        <a href="https://wa.me/201127915966?text=ألو%20كرم،%20عايز%20أحجز%20عرض%20الغسيل%20الشامل" class="whatsapp-btn">احجز الشامل واتساب 📱</a>
+      </div>
+      <div class="offer-card">
+        <h2>غسيل سريع بره بس ⚡️</h2>
+        <div class="price"><small>130ج</small> 100ج <span style="font-size:18px;">سيدان</span></div>
+        <div class="price">120ج <span style="font-size:18px;">SUV</span></div>
+        <ul>
+          <li>غسيل بودي + جنوط في 20 دقيقة</li>
+          <li>تلميع كاوتش + فواحة هدية</li>
+          <li>للمستعجلين</li>
+        </ul>
+        <a href="https://wa.me/201127915966?text=ألو%20كرم،%20عايز%20أحجز%20عرض%20الغسيل%20السريع" class="whatsapp-btn">احجز السريع واتساب 📱</a>
+      </div>
+    <div class="coverage">
+      <h3>📍 بنغطي مدينة الشروق بالكامل</h3>
+      <p>الشروق 1 - الشروق 2 - الشروق 3<br>بنجيلك في أي مكان</p>
+    </div>
+    <div class="footer">
+      بعد الخميس 9 يوليو الأسعار هترجع للطبيعي<br>
+      © غسيلك لعندك 2026 - واتساب 01127915966
+    </div>
+  </div>
+  <a href="https://wa.me/201127915966?text=ألو%20كرم،%20عايز%20أحجز%20عرض%20الشروق" class="whatsapp-float">💬</a>
+  <script>
+    const countDownDate = new Date("Jul 9, 2026 22:00:00 GMT+0300").getTime();
+    const x = setInterval(function() {
+      const now = new Date().getTime();
+      const distance = countDownDate - now;
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      document.getElementById("timer").innerHTML = days + " يوم " + hours + " ساعة " + minutes + " دقيقة " + seconds + " ثانية ";
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("timer").innerHTML = "انتهى العرض";
+      }
+    }, 1000);
+  </script>
 </body>
-    </html>
+</html>
