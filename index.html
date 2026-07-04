@@ -14,6 +14,10 @@
     .header { text-align: center; padding: 30px 0; background: white; margin: 20px 0; border-radius: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
     .header h1 { font-size: 32px; color: #1976d2; margin-bottom: 10px; font-weight: 900; }
     .header p { font-size: 18px; color: #555; }
+    .features { background: #e3f2fd; padding: 20px; border-radius: 15px; margin: 20px 0; }
+    .features h3 { color: #1976d2; margin-bottom: 15px; text-align: center; font-weight: 700; }
+    .features-list { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .features-list div { background: white; padding: 10px; border-radius: 8px; font-size: 14px; text-align: center; }
     .offers { display: flex; gap: 15px; flex-direction: column; }
     .offer-card { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border: 3px solid #1976d2; }
     .offer-card.hot { border-color: #ff9800; position: relative; }
@@ -41,6 +45,20 @@
       <h1>🚗 غسيلك لعندك</h1>
       <p>أول مغسلة سيارات متنقلة في الشروق<br>بنجيلك لحد باب البيت</p>
     </div>
+
+    <!-- المميزات الجديدة -->
+    <div class="features">
+      <h3>ليه تختارنا؟</h3>
+      <div class="features-list">
+        <div>🧰 أدوات احترافية</div>
+        <div>🧽 فوط مايكروفايبر مخصصة</div>
+        <div>🔫 مسدس Total آمن 100% على البوية</div>
+        <div>💨 تظبيط هواء الكاوتش اختياري مجاناً</div>
+        <div>🚿 غسيل دواسات بعد الغسلة</div>
+        <div>💰 الدفع بعد ما تعجبك النتيجة</div>
+      </div>
+    </div>
+
     <div class="offers">
       <div class="offer-card hot">
         <span class="badge">الأكثر طلباً</span>
@@ -48,10 +66,10 @@
         <div class="price"><small>230ج</small> 180ج <span style="font-size:18px;">سيدان</span></div>
         <div class="price">220ج <span style="font-size:18px;">SUV</span></div>
         <ul>
-          <li>غسيل بودي + مكنسة صالون</li>
-          <li>تلميع تابلوه + تلميع كاوتش</li>
-          <li>فواحة هدية</li>
-          <li>الدفع بعد ما تعجبك النتيجة</li>
+          <li>غسيل بودي بمسدس Total آمن</li>
+          <li>مكنسة صالون + تلميع تابلوه</li>
+          <li>تلميع كاوتش + غسيل دواسات</li>
+          <li>تظبيط هواء كاوتش مجاناً - اطلبه</li>
         </ul>
         <a href="https://wa.me/201127915966?text=ألو%20كرم،%20عايز%20أحجز%20عرض%20الغسيل%20الشامل" class="whatsapp-btn">احجز الشامل واتساب 📱</a>
       </div>
@@ -60,9 +78,10 @@
         <div class="price"><small>130ج</small> 100ج <span style="font-size:18px;">سيدان</span></div>
         <div class="price">120ج <span style="font-size:18px;">SUV</span></div>
         <ul>
-          <li>غسيل بودي + جنوط في 20 دقيقة</li>
-          <li>تلميع كاوتش + فواحة هدية</li>
-          <li>للمستعجلين</li>
+          <li>غسيل بودي بمسدس Total في 20 دقيقة</li>
+          <li>تلميع كاوتش + غسيل دواسات</li>
+          <li>فوط مايكروفايبر مخصصة</li>
+          <li>تظبيط هواء كاوتش مجاناً - اطلبه</li>
         </ul>
         <a href="https://wa.me/201127915966?text=ألو%20كرم،%20عايز%20أحجز%20عرض%20الغسيل%20السريع" class="whatsapp-btn">احجز السريع واتساب 📱</a>
       </div>
