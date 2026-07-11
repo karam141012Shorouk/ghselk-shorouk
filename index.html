@@ -1,114 +1,83 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>غسيلك لعندك - مغسلة سيارات متنقلة الشروق</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Cairo', sans-serif; background: #0f0c29; color: #fff; }
-    .container { max-width: 650px; margin: auto; padding: 0 15px 20px; }
-    .top-bar { background: #6a1bff; text-align: center; padding: 15px; border-radius: 0 0 20px 20px; }
-    .top-bar h1 { font-size: 22px; font-weight: 900; }
-    .top-bar p { font-size: 14px; margin-top: 5px; opacity: 0.9; }
-    .hero { background: white; color: #111; border-radius: 20px; margin: 15px 0; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
-    .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 15px; }
-    .box-dark { background: #0d0f35; color: white; padding: 15px; border-radius: 15px; }
-    .box-purple { background: #6a1bff; color: white; padding: 15px; border-radius: 15px; }
-    .price-title { font-size: 18px; font-weight: 900; color: #ffeb3b; }
-    .price-main { font-size: 38px; font-weight: 900; line-height: 1; margin: 5px 0; }
-    .price-old { font-size: 14px; text-decoration: line-through; color: #ff8a80; }
-    .features { list-style: none; margin-top: 10px; }
-    .features li { padding: 6px 0; font-size: 14px; font-weight: 700; }
-    .features li:before { content: "✅ "; color: #25ff5f; }
-    .offers { display: grid; gap: 15px; margin-top: 15px; }
-    .offer-card { background: white; color: #111; padding: 20px; border-radius: 20px; border: 3px solid #6a1bff; }
-    .offer-card.hot { border-color: #ff9800; position: relative; }
-    .badge { position: absolute; top: -12px; right: 20px; background: #ff9800; color: white; padding: 5px 15px; border-radius: 20px; font-size: 12px; font-weight: 700; }
-    .price-line { display: flex; justify-content: space-between; align-items: center; background: #f3f0ff; padding: 12px; border-radius: 12px; margin: 8px 0; }
-    .price-line b { font-size: 20px; color: #d32f2f; }
-    .price-line s { font-size: 13px; color: #777; }
-    .btn { display: block; background: #25D366; color: white; text-align: center; padding: 16px; border-radius: 50px; font-size: 18px; font-weight: 900; text-decoration: none; margin-top: 12px; }
-    .info-box { background: #6a1bff; padding: 15px; border-radius: 15px; text-align: center; font-size: 14px; line-height: 1.6; margin: 15px 0; }
-    .whatsapp-float { position: fixed; bottom: 20px; left: 20px; background: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.4); z-index: 999; text-decoration: none; }
-    .footer-badges { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 8px; background: #0d0f35; padding: 15px; border-radius: 15px; font-size: 10px; text-align: center; margin-top: 15px; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>غسيلك لعندك - مغسلة متنقلة الشروق ومساكن مصر</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Cairo',sans-serif;background:#0f0c29;color:#fff}
+.c{max-width:600px;margin:auto;padding:10px}
+.top{background:#6a1bff;text-align:center;padding:14px;border-radius:0 0 18px 18px}
+.top h1{font-size:18px;font-weight:900}
+.top p{font-size:11px;opacity:.9;margin-top:4px}
+.box{margin:12px 0;background:#fff;border-radius:18px;padding:8px;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.d{background:#0d0f35;border-radius:14px;padding:12px}
+.p{background:#6a1bff;border-radius:14px;padding:12px;text-align:center}
+.pm{font-size:32px;font-weight:900;color:#fff;line-height:1}
+.po{font-size:11px;color:#ffb3b3;text-decoration:line-through}
+.f{list-style:none;margin-top:6px}
+.f li{font-size:11.5px;font-weight:700;padding:3px 0}
+.table{background:#fff;color:#111;border-radius:18px;padding:14px;margin-top:10px}
+.row{display:flex;justify-content:space-between;align-items:center;padding:11px;background:#f5f3ff;border-radius:10px;margin:7px 0}
+.row b{color:#d32f2f;font-size:17px}
+.btn{display:block;background:#25D366;color:#fff;text-align:center;padding:14px;border-radius:30px;font-weight:900;text-decoration:none;margin-top:12px;font-size:16px}
+.info{background:#1a1640;border-radius:14px;padding:12px;text-align:center;font-size:12px;line-height:1.6;margin-top:12px;color:#ccc}
+</style>
 </head>
 <body>
-  <div class="container">
-    <div class="top-bar">
-      <h1>🚗 غسيلك لعندك - مغسلة سيارات</h1>
-      <p>هنجيلك لحد بيتك - متنقلة تأتي إليك - الإسكان ومساكن مصر والشروق</p>
-    </div>
+<div class="c">
 
-    <div class="hero">
-      <div class="hero-grid">
-        <div class="box-purple">
-          <div class="price-title">عرض خاص - برا فقط</div>
-          <div class="price-main">120ج <span style="font-size:14px;">بدلاً من 150ج</span></div>
-          <div style="margin-top:15px; font-weight:900; font-size:18px;">سيدان برا 150 SUV</div>
-          <div class="price-old">بدلاً من 170 جنيه</div>
-          <hr style="margin:12px 0; border-color: #ffffff30;">
-          <div class="price-title">برا وجوا</div>
-          <div class="price-main">230ج</div>
-          <div>سيدان بدلاً من 260ج</div>
-          <div class="price-main" style="margin-top:10px;">250ج SUV</div>
-          <div>برا وجوا بدلاً من 300ج</div>
-        </div>
-        <div class="box-dark">
-          <div style="font-weight:900; font-size:18px; color:#a78bfa; margin-bottom:10px;">التفاصيل تشمل:</div>
-          <ul class="features">
-            <li>غسيل برا وجوا</li>
-            <li>تزوية كاوتش</li>
-            <li>دواسات وورق هدية</li>
-            <li>معطر هدية Total</li>
-            <li>مسدس ميا آمن على البوهية</li>
-            <li>فوط مايكروفايبر ومواد آمنة 100%</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+<div class="top">
+<h1>🚗 غسيلك لعندك - مغسلة سيارات متنقلة</h1>
+<p>هنجيلك لحد بيتك - الإسكان ومساكن مصر والشروق - 01127915966</p>
+</div>
 
-    <div class="offers">
-      <div class="offer-card">
-        <h3>⚡️ غسيل برا فقط</h3>
-        <div class="price-line"><span>سيدان</span><div><s>150ج</s> <b>120ج</b></div></div>
-        <div class="price-line"><span>SUV</span><div><s>170ج</s> <b>150ج</b></div></div>
-        <a href="https://wa.me/201127915966?text=عايز%20احجز%20غسيل%20برا%20فقط%20-%20الاسكان" class="btn">احجز برا فقط 📱</a>
-      </div>
+<div class="box">
+<div class="d">
+<div style="color:#a78bfa;font-weight:900;font-size:12px;margin-bottom:6px">التفاصيل تشمل:</div>
+<ul class="f">
+<li>✅ غسيل برا وجوا</li>
+<li>✅ تزوية كاوتش</li>
+<li>✅ دواسات وورق هدية</li>
+<li>✅ معطر هدية Total</li>
+<li>✅ مسدس ميا آمن على البوهية</li>
+<li>✅ فوط مايكروفايبر ومواد آمنة 100%</li>
+</ul>
+</div>
 
-      <div class="offer-card hot">
-        <span class="badge">الأكثر طلباً</span>
-        <h3>🔥 غسيل برا وجوا - عرض خاص</h3>
-        <div class="price-line"><span>سيدان برا وجوا</span><div><s>260ج</s> <b>230ج</b></div></div>
-        <div class="price-line"><span>SUV برا وجوا</span><div><s>300ج</s> <b>250ج</b></div></div>
-        <ul style="list-style:none; margin-top:10px; font-size:13px;">
-          <li>✅ تزوية كاوتش + دواسات هدية + معطر Total</li>
-          <li>✅ مسدس آمن + فوط مايكروفايبر مخصصة</li>
-          <li>✅ تظبيط هواء كاوتش مجاناً - اطلبه</li>
-        </ul>
-        <a href="https://wa.me/201127915966?text=عايز%20احجز%20عرض%20برا%20وجوا%20-%20الاسكان" class="btn">احجز الشامل واتساب 📱</a>
-      </div>
-    </div>
+<div class="p">
+<div style="color:#ffeb3b;font-weight:900;font-size:12px">عرض خاص - برا فقط</div>
+<div class="pm">120ج</div>
+<div style="font-size:10px">بدلاً من 150ج</div>
+<div style="font-size:12px;margin-top:6px;font-weight:900">سيدان برا 150 SUV</div>
+<div class="po">بدلاً من 170 جنيه</div>
+<hr style="margin:8px 0;border-color:#ffffff30">
+<div style="color:#ffeb3b;font-weight:900;font-size:13px">برا وجوا</div>
+<div class="pm">230ج</div>
+<div style="font-size:10px">سيدان بدلاً من 260ج</div>
+<div class="pm" style="margin-top:5px">250ج SUV</div>
+<div style="font-size:10px">برا وجوا بدلاً من 300ج</div>
+</div>
+</div>
 
-    <div class="info-box">
-      📍 عرض خاص لأهل الشروق - دلوقتي تقدر تطلب وأنا أجيلك لحد بيتك أغسلك العربية بأدوات احترافية آمنة على البوهية وفوط مايكروفايبر مخصصة عشان نتجنب نجرح العربية نحن نهتم بأقل التفاصيل
-    </div>
+<div class="table">
+<h3 style="font-size:14px;margin-bottom:6px">⚡️ قائمة الأسعار المختصرة</h3>
 
-    <div style="text-align:center; margin: 20px 0;">
-      <h2>احجز واتساب: 01127915966 💬</h2>
-      <a href="https://wa.me/201127915966" style="display:inline-block; background:#25D366; color:white; padding:15px 30px; border-radius:50px; text-decoration:none; font-weight:900; margin-top:10px; font-size:20px;">01127915966</a>
-    </div>
+<div class="row"><span>سيدان - برا فقط</span><span><s style="font-size:11px;color:#888">150ج</s> <b>120ج</b></span></div>
+<div class="row"><span>SUV - برا فقط</span><span><s style="font-size:11px;color:#888">170ج</s> <b>150ج</b></span></div>
+<div class="row"><span>سيدان - برا وجوا</span><span><s style="font-size:11px;color:#888">260ج</s> <b>230ج</b></span></div>
+<div class="row"><span>SUV - برا وجوا</span><span><s style="font-size:11px;color:#888">300ج</s> <b>250ج</b></span></div>
 
-    <div class="footer-badges">
-      <div>⭐ جودة مضمونة 100%</div>
-      <div>🛡️ مواد تنظيف آمنة وصديقة للبيئة</div>
-      <div>⏰ خدمة سريعة خلال 30-45 دقيقة</div>
-      <div>🏠 خدمة متنقلة هنجيلك لحد بيتك نغطي الشروق</div>
-    </div>
-  </div>
+<a href="https://api.whatsapp.com/send?phone=201127915966&text=السلام%20عليكم%20يا%20كرم%20عايز%20احجز%20غسيل%20عربية%20في%20الاسكان" class="btn">احجز واتساب الآن - 01127915966 📱</a>
+</div>
 
-  <a href="https://wa.me/201127915966" class="whatsapp-float">💬</a>
+<div class="info">
+📍 نغطي الشروق - الإسكان الاجتماعي ومساكن مصر - خدمة متنقلة تأتي إليك<br>
+🛡️ مواد آمنة 100% - ⏰ 30-45 دقيقة - ⭐ جودة مضمونة
+</div>
+
+</div>
 </body>
 </html>
