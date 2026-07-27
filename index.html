@@ -1,84 +1,711 @@
-<div class="info" style="background:#0d0f35;color:#fff;border-radius:18px;padding:20px;margin-bottom:20px;line-height:1.9;">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<h2 style="color:#ffeb3b;text-align:center;font-size:28px;margin-bottom:10px;">
-🚗 KARAM CAR
+<title>KARAM CAR | غسيل سيارات متنقل</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Cairo',sans-serif;
+}
+
+body{
+background:#0d0f35;
+color:#fff;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:15px;
+}
+
+.header{
+text-align:center;
+padding:30px 15px;
+}
+
+.header h1{
+color:#FFD54F;
+font-size:34px;
+font-weight:900;
+}
+
+.header h2{
+margin-top:15px;
+font-size:22px;
+}
+
+.header p{
+margin-top:12px;
+color:#ddd;
+line-height:1.9;
+}
+
+.notice{
+background:linear-gradient(135deg,#6a1bff,#8a2eff);
+padding:20px;
+border-radius:18px;
+margin-top:25px;
+}
+
+.notice h3{
+color:#FFD54F;
+margin-bottom:15px;
+}
+
+.notice p{
+line-height:2;
+font-size:17px;
+}
+
+.section-title{
+
+text-align:center;
+
+font-size:30px;
+
+margin:40px 0 25px;
+
+color:#FFD54F;
+
+font-weight:900;
+
+}
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:15px;
+
+}
+
+.card{
+
+background:#171942;
+
+padding:18px;
+
+border-radius:15px;
+
+font-size:17px;
+
+}
+
+.card b{
+
+color:#7FDBFF;
+
+}
+
+.gifts{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:15px;
+
+margin-top:15px;
+
+}
+
+.gift{
+
+background:#171942;
+
+padding:16px;
+
+border-radius:14px;
+
+font-size:17px;
+
+}
+
+.pricing{
+
+margin-top:45px;
+
+}
+
+.package{
+
+background:#fff;
+
+color:#111;
+
+border-radius:18px;
+
+padding:20px;
+
+margin-bottom:25px;
+
+position:relative;
+
+}
+
+.badge{
+
+position:absolute;
+
+left:15px;
+
+top:15px;
+
+background:#00c853;
+
+color:#fff;
+
+padding:6px 12px;
+
+border-radius:30px;
+
+font-size:14px;
+
+font-weight:bold;
+
+}
+
+.package h3{
+
+font-size:26px;
+
+margin-bottom:15px;
+
+color:#6a1bff;
+
+}
+
+.price-row{
+
+display:flex;
+
+justify-content:space-between;
+
+padding:10px 0;
+
+border-bottom:1px solid #eee;
+
+}
+
+.new{
+
+color:#16a34a;
+
+font-size:28px;
+
+font-weight:900;
+
+}
+
+.old{
+
+color:#d50000;
+
+text-decoration:line-through;
+
+font-size:18px;
+
+}
+
+.book{
+
+background:#00BCD4;
+
+color:#fff;
+
+padding:12px 25px;
+
+border-radius:30px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+display:inline-block;
+
+margin-top:18px;
+
+}
+
+.footer{
+
+margin:40px 0;
+
+text-align:center;
+
+color:#ccc;
+
+line-height:2;
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<h1>🚗 KARAM CAR</h1>
+
+<h2>💦 غسيل سيارات متنقل... هنجيلك لحد باب بيتك</h2>
+
+<p>
+
+وفرنا عليك الزحمة والطوابير.<br>
+
+أنا اللي باجي بنفسي أغسل عربيتك بأفضل المعدات والمواد الأصلية الآمنة على البوية.
+
+</p>
+
+</div>
+
+<div class="notice">
+
+<h3>🔴 ليه تختار KARAM CAR؟</h3>
+
+<p>
+
+✅ أنا اللي باجي بنفسي بكل المعدات.<br>
+
+✅ مش شركة ومش ببعت أي حد مكاني.<br>
+
+✅ شغلي قدام عينك من أول دقيقة لآخر غسلة.<br>
+
+✅ لو معجبكش الشغل... متدفعش جنيه واحد.
+
+</p>
+
+</div>
+
+<h2 class="section-title">💪 المعدات الأصلية</h2>
+
+<div class="grid">
+
+<div class="card">🔹 مسدس غسيل <b>TOTAL 20V</b></div>
+
+<div class="card">🔹 بطارية أصلية <b>TOTAL 20V</b></div>
+
+<div class="card">🔹 مكنسة شفط داخلي <b>TOTAL</b></div>
+
+<div class="card">🔹 فوم <b>SONAX ACTIFOAM</b></div>
+
+<div class="card">🔹 جل كاوتش <b>Flamingo</b></div>
+
+<div class="card">🔹 فوط <b>Microfiber</b></div>
+
+</div>
+
+<h2 class="section-title">🎁 الهدايا مع كل غسلة</h2>
+
+<div class="gifts">
+
+<div class="gift">✅ دواسات ورق جديدة</div>
+
+<div class="gift">✅ ضبط هواء الكاوتش</div>
+
+<div class="gift">✅ معطر سيارة هدية</div>
+
+<div class="gift">✅ جل كاوتش Flamingo</div>
+
+</div>
+
+<h2 class="section-title">💰 الأسعار</h2>
+
+<div class="pricing">
+
+  <!-- ===== الغسيل الخارجي ===== -->
+
+<div class="package">
+
+<h3>🚗 غسيل خارجي مرة واحدة</h3>
+
+<div class="price-row">
+<div>
+<b>🚘 سيدان (Sedan)</b>
+</div>
+
+<div class="new">149 ج</div>
+</div>
+
+<div class="price-row">
+<div>
+<b>🚙 SUV</b>
+</div>
+
+<div class="new">169 ج</div>
+</div>
+
+<a class="book" href="https://api.whatsapp.com/send?phone=201127915966&text=السلام عليكم، أريد حجز غسيل خارجي مرة واحدة">
+📲 احجز الآن
+</a>
+
+</div>
+
+
+<div class="package">
+
+<h3>🚗 اشتراك غسيل خارجي 4 مرات</h3>
+
+<div class="price-row">
+<div>
+🚘 سيدان
+<br>
+<span class="old">720 ج</span>
+</div>
+
+<div class="new">499 ج</div>
+
+</div>
+
+<div class="price-row">
+
+<div>
+
+🚙 SUV
+
+<br>
+
+<span class="old">800 ج</span>
+
+</div>
+
+<div class="new">
+
+579 ج
+
+</div>
+
+</div>
+
+<a class="book" href="https://api.whatsapp.com/send?phone=201127915966&text=السلام عليكم، أريد اشتراك غسيل خارجي 4 مرات">
+
+📲 احجز الآن
+
+</a>
+
+</div>
+
+
+<div class="package">
+
+<h3>🚗 اشتراك غسيل خارجي 6 مرات</h3>
+
+<div class="price-row">
+
+<div>
+
+🚘 سيدان
+
+<br>
+
+<span class="old">1080 ج</span>
+
+</div>
+
+<div class="new">
+
+699 ج
+
+</div>
+
+</div>
+
+<div class="price-row">
+
+<div>
+
+🚙 SUV
+
+<br>
+
+<span class="old">1200 ج</span>
+
+</div>
+
+<div class="new">
+
+829 ج
+
+</div>
+
+</div>
+
+<a class="book" href="https://api.whatsapp.com/send?phone=201127915966&text=السلام عليكم، أريد اشتراك غسيل خارجي 6 مرات">
+
+📲 احجز الآن
+
+</a>
+
+</div>
+
+
+<div class="package">
+
+<div class="badge">
+
+🔥 الأكثر قيمة
+
+</div>
+
+<h3>🚗 اشتراك غسيل خارجي 8 مرات</h3>
+
+<div class="price-row">
+
+<div>
+
+🚘 سيدان
+
+<br>
+
+<span class="old">1440 ج</span>
+
+</div>
+
+<div class="new">
+
+899 ج
+
+</div>
+
+</div>
+
+<div class="price-row">
+
+<div>
+
+🚙 SUV
+
+<br>
+
+<span class="old">1600 ج</span>
+
+</div>
+
+<div class="new">
+
+1049 ج
+
+</div>
+
+</div>
+
+<a class="book" href="https://api.whatsapp.com/send?phone=201127915966&text=السلام عليكم، أريد اشتراك غسيل خارجي 8 مرات">
+
+📲 احجز الآن
+
+</a>
+
+</div>
+
+
+<h2 class="section-title">
+
+🧼 الغسيل الخارجي والداخلي
+
 </h2>
 
-<p style="text-align:center;font-size:18px;font-weight:bold;color:#fff;">
-💦 غسيل سيارات متنقل... هنجيلك لحد باب بيتك
-</p>
+  <!-- ===== الغسيل الخارجي ===== -->
 
-<p style="text-align:center;color:#ddd;font-size:15px;">
-وفرنا عليك الزحمة والطوابير والانتظار...
-احجز وإحنا نوصل لحد عندك ونغسل عربيتك بأفضل المعدات والمواد الأصلية الآمنة على البوية.
-</p>
+<div class="package">
 
-<div style="background:#6a1bff;padding:15px;border-radius:14px;margin:20px 0;">
-<h3 style="color:#ffeb3b;margin-bottom:10px;">🔴 ليه تختار KARAM CAR؟</h3>
+<h3>🚗 غسيل خارجي مرة واحدة</h3>
 
-<p style="font-size:15px;line-height:2;">
-✅ أنا اللي باجي بنفسي بكل المعدات.<br>
-✅ مش شركة ومش ببعت حد مكاني.<br>
-✅ شغلي قدام عينك من أول دقيقة لآخر دقيقة.<br>
-✅ ولو معجبكش الشغل... <span style="color:#00ff88;font-weight:bold;">متدفعش جنيه واحد.</span>
-</p>
+<div class="price-row">
+<div>
+<b>🚘 سيدان (Sedan)</b>
+</div>
+
+<div class="new">149 ج</div>
+</div>
+
+<div class="price-row">
+<div>
+<b>🚙 SUV</b>
+</div>
+
+<div class="new">169 ج</div>
+</div>
+
+<a class="book" href="https://api.whatsapp.com/send?phone=201127915966&text=السلام عليكم، أريد حجز غسيل خارجي مرة واحدة">
+📲 احجز الآن
+</a>
 
 </div>
 
-<h3 style="color:#ffeb3b;text-align:center;margin-bottom:15px;">
-💪 بنستخدم معدات احترافية أصلية
-</h3>
 
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+<div class="package">
 
-<div style="background:#1b1746;padding:12px;border-radius:12px;">🔹 مسدس غسيل TOTAL 20V</div>
+<h3>🚗 اشتراك غسيل خارجي 4 مرات</h3>
 
-<div style="background:#1b1746;padding:12px;border-radius:12px;">🔹 بطارية TOTAL أصلية</div>
+<div class="price-row">
+<div>
+🚘 سيدان
+<br>
+<span class="old">720 ج</span>
+</div>
 
-<div style="background:#1b1746;padding:12px;border-radius:12px;">🔹 مكنسة TOTAL للشفط الداخلي</div>
-
-<div style="background:#1b1746;padding:12px;border-radius:12px;">🔹 SONAX ACTIFOAM الألماني</div>
-
-<div style="background:#1b1746;padding:12px;border-radius:12px;">🔹 جل كاوتش Flamingo</div>
-
-<div style="background:#1b1746;padding:12px;border-radius:12px;">🔹 فوط Microfiber احترافية</div>
+<div class="new">499 ج</div>
 
 </div>
 
-<h3 style="color:#ffeb3b;text-align:center;margin:25px 0 15px;">
-🎁 هدايا مجانية مع كل غسلة
-</h3>
+<div class="price-row">
 
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+<div>
 
-<div style="background:#1b1746;padding:12px;border-radius:12px;">✅ دواسات ورق جديدة</div>
+🚙 SUV
 
-<div style="background:#1b1746;padding:12px;border-radius:12px;">✅ ضبط هواء الكاوتش</div>
+<br>
 
-<div style="background:#1b1746;padding:12px;border-radius:12px;">✅ معطر سيارة هدية</div>
-
-<div style="background:#1b1746;padding:12px;border-radius:12px;">✅ جل كاوتش Flamingo</div>
+<span class="old">800 ج</span>
 
 </div>
 
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:25px;">
+<div class="new">
 
-<div style="background:#f5f3ff;color:#111;padding:15px;border-radius:15px;text-align:center;font-weight:bold;">
-🚗 غسيل متنقل حتى باب المنزل
-</div>
+579 ج
 
-<div style="background:#f5f3ff;color:#111;padding:15px;border-radius:15px;text-align:center;font-weight:bold;">
-🛡️ مواد آمنة 100% على البوية
-</div>
-
-<div style="background:#f5f3ff;color:#111;padding:15px;border-radius:15px;text-align:center;font-weight:bold;">
-🎁 هدايا مجانية مع كل غسلة
-</div>
-
-<div style="background:#f5f3ff;color:#111;padding:15px;border-radius:15px;text-align:center;font-weight:bold;">
-⭐ جودة عالية واهتمام بأدق التفاصيل
 </div>
 
 </div>
 
+<a class="book" href="https://api.whatsapp.com/send?phone=201127915966&text=السلام عليكم، أريد اشتراك غسيل خارجي 4 مرات">
+
+📲 احجز الآن
+
+</a>
+
 </div>
+
+
+<div class="package">
+
+<h3>🚗 اشتراك غسيل خارجي 6 مرات</h3>
+
+<div class="price-row">
+
+<div>
+
+🚘 سيدان
+
+<br>
+
+<span class="old">1080 ج</span>
+
+</div>
+
+<div class="new">
+
+699 ج
+
+</div>
+
+</div>
+
+<div class="price-row">
+
+<div>
+
+🚙 SUV
+
+<br>
+
+<span class="old">1200 ج</span>
+
+</div>
+
+<div class="new">
+
+829 ج
+
+</div>
+
+</div>
+
+<a class="book" href="https://api.whatsapp.com/send?phone=201127915966&text=السلام عليكم، أريد اشتراك غسيل خارجي 6 مرات">
+
+📲 احجز الآن
+
+</a>
+
+</div>
+
+
+<div class="package">
+
+<div class="badge">
+
+🔥 الأكثر قيمة
+
+</div>
+
+<h3>🚗 اشتراك غسيل خارجي 8 مرات</h3>
+
+<div class="price-row">
+
+<div>
+
+🚘 سيدان
+
+<br>
+
+<span class="old">1440 ج</span>
+
+</div>
+
+<div class="new">
+
+899 ج
+
+</div>
+
+</div>
+
+<div class="price-row">
+
+<div>
+
+🚙 SUV
+
+<br>
+
+<span class="old">1600 ج</span>
+
+</div>
+
+<div class="new">
+
+1049 ج
+
+</div>
+
+</div>
+
+<a class="book" href="https://api.whatsapp.com/send?phone=201127915966&text=السلام عليكم، أريد اشتراك غسيل خارجي 8 مرات">
+
+📲 احجز الآن
+
+</a>
+
+</div>
+
+
+<h2 class="section-title">
+
+🧼 الغسيل الخارجي والداخلي
+
+</h2>
