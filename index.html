@@ -1,664 +1,75 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width,initial-scale=1">
-
-<title>KARAM CAR | غسيل سيارات متنقل</title>
-
+<title>KARAM CAR - غسيل متنقل الشروق</title>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
-
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Cairo',sans-serif;
-}
-
-body{
-
-background:#0d0f35;
-
-color:#fff;
-
-}
-
-.container{
-
-max-width:900px;
-
-margin:auto;
-
-padding:15px;
-
-}
-
-.header{
-
-text-align:center;
-
-padding:30px 15px;
-
-}
-
-.header h1{
-
-font-size:38px;
-
-color:#FFD54F;
-
-font-weight:900;
-
-}
-
-.header h2{
-
-margin-top:15px;
-
-font-size:22px;
-
-}
-
-.header p{
-
-margin-top:15px;
-
-line-height:2;
-
-color:#ddd;
-
-}
-
-.notice{
-
-background:#6a1bff;
-
-padding:20px;
-
-border-radius:18px;
-
-margin-top:20px;
-
-}
-
-.notice h3{
-
-color:#FFD54F;
-
-margin-bottom:10px;
-
-}
-
-.notice p{
-
-line-height:2;
-
-}
-
-.section-title{
-
-font-size:30px;
-
-text-align:center;
-
-margin:40px 0 25px;
-
-color:#FFD54F;
-
-font-weight:900;
-
-}
-
-.grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
-gap:15px;
-
-}
-
-.card{
-
-background:#171942;
-
-padding:16px;
-
-border-radius:14px;
-
-font-size:17px;
-
-}
-
-.package{
-
-background:#fff;
-
-color:#111;
-
-padding:20px;
-
-border-radius:20px;
-
-margin-bottom:25px;
-
-position:relative;
-
-}
-
-.package h3{
-
-color:#6a1bff;
-
-font-size:24px;
-
-margin-bottom:15px;
-
-}
-
-.badge{
-
-position:absolute;
-
-left:15px;
-
-top:15px;
-
-background:#00c853;
-
-padding:6px 12px;
-
-border-radius:30px;
-
-color:#fff;
-
-font-weight:bold;
-
-}
-
-.price-row{
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-padding:12px 0;
-
-border-bottom:1px solid #eee;
-
-}
-
-.new{
-
-color:#16a34a;
-
-font-size:27px;
-
-font-weight:900;
-
-}
-
-.old{
-
-color:#d50000;
-
-text-decoration:line-through;
-
-font-size:18px;
-
-}
-
-.book{
-
-display:inline-block;
-
-margin-top:18px;
-
-background:#00BCD4;
-
-color:#fff;
-
-padding:12px 25px;
-
-border-radius:30px;
-
-font-weight:bold;
-
-text-decoration:none;
-
-}
-
-.footer{
-
-text-align:center;
-
-margin:50px 0;
-
-line-height:2;
-
-color:#ccc;
-
-}
-
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Cairo',sans-serif}
+body{background:#0d0f35;color:#fff}
+.container{max-width:900px;margin:auto;padding:15px}
+.hero{width:100%;border-radius:20px;overflow:hidden;margin:15px 0;border:3px solid #6a1bff}
+.hero img{width:100%;display:block}
+.header{text-align:center;padding:15px}
+.header h1{color:#FFD54F;font-size:34px;font-weight:900}
+.notice{background:#6a1bff;padding:22px;border-radius:18px;margin:20px 0;line-height:2.2}
+.notice h3{color:#FFD54F}
+.section-title{color:#FFD54F;text-align:center;margin:35px 0 15px;font-size:26px;font-weight:900}
+.package{background:#fff;color:#111;padding:20px;border-radius:18px;margin-bottom:15px}
+.price-row{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid #eee;font-size:18px}
+.new{color:#16a34a;font-size:26px;font-weight:900}
+.old{color:#d50000;text-decoration:line-through;font-weight:700}
+.book{display:inline-block;background:#00BCD4;color:#fff;padding:12px 28px;border-radius:30px;text-decoration:none;font-weight:bold;margin-top:15px}
+.footer{text-align:center;margin:40px 0;color:#ccc}
 </style>
-
 </head>
-
 <body>
-
 <div class="container">
 
-  <div class="header">
-
-<h1>🚗 KARAM CAR</h1>
-
-<h2>💦 غسيل سيارات متنقل... هنجيلك لحد باب بيتك</h2>
-
-<p>
-وفرنا عليك الزحمة والطوابير والانتظار.
-أنا اللي باجي بنفسي أغسل عربيتك بأفضل المعدات والمواد الأصلية الآمنة على البوية.
-</p>
-
+<div class="header">
+<h1>🚗 KARAM CAR - غسيل سيارات متنقل 💦</h1>
+<p>هنجيلك لحد باب بيتك في الشروق<br>📞 للحجز: 01127915966</p>
 </div>
 
 <div class="notice">
-
 <h3>🔴 ليه تختار KARAM CAR؟</h3>
-
-<p>
 ✅ أنا اللي باجي بنفسي بكل المعدات.<br>
 ✅ مش شركة ومش ببعت حد مكاني.<br>
-✅ شغلي قدام عينك من أول دقيقة لآخر غسلة.<br>
-✅ لو معجبكش الشغل... <span style="color:#00ff88;font-weight:bold;">متدفعش جنيه واحد.</span>
-</p>
-
+✅ شغلي قدام عينك من أول دقيقة.<br>
+✅ لو معجبكش الشغل متدفعش جنيه واحد.<br><br>
+💪 بنستخدم معدات أصلية:<br>
+🔹 مسدس TOTAL 20V + مكنسة TOTAL<br>
+🔹 فوم SONAX الألماني + جل Flamingo<br>
+🔹 فوط Microfiber احترافية<br><br>
+🎁 هدايا مجانية مع كل غسلة: دواسات ورق + هواء كاوتش + معطر
 </div>
 
-<h2 class="section-title">
-💪 المعدات الأصلية
-</h2>
-
-<div class="grid">
-
-<div class="card">🔹 مسدس غسيل TOTAL 20V</div>
-
-<div class="card">🔹 بطارية TOTAL أصلية</div>
-
-<div class="card">🔹 مكنسة TOTAL للشفط الداخلي</div>
-
-<div class="card">🔹 فوم SONAX ACTIFOAM الألماني</div>
-
-<div class="card">🔹 جل كاوتش Flamingo الأصلي</div>
-
-<div class="card">🔹 فوط Microfiber احترافية</div>
-
-</div>
-
-<h2 class="section-title">
-🎁 الهدايا مع كل غسلة
-</h2>
-
-<div class="grid">
-
-<div class="card">🎁 دواسات ورق جديدة</div>
-
-<div class="card">🎁 ضبط هواء الكاوتش</div>
-
-<div class="card">🎁 معطر سيارة هدية</div>
-
-<div class="card">🎁 جل كاوتش Flamingo</div>
-
-</div>
-
-<h2 class="section-title">
-🚘 أسعار السيدان (Sedan)
-</h2>
-
-  <div class="package">
-
-<h3>🚗 سيدان - غسيل خارجي</h3>
-
-<div class="price-row">
-<span>غسيل مرة واحدة</span>
-<div class="new">149 ج</div>
-</div>
-
-<div class="price-row">
-<span>اشتراك 4 مرات</span>
-<div>
-<span style="color:#000;">بدل</span>
-<span class="old">720 ج</span><br>
-<span class="new">499 ج</span>
-</div>
-</div>
-
-<div class="price-row">
-<span>اشتراك 6 مرات</span>
-<div>
-<span style="color:#000;">بدل</span>
-<span class="old">1080 ج</span><br>
-<span class="new">699 ج</span>
-</div>
-</div>
-
-<div class="package" style="border:3px solid #00c853;">
-
-<div class="badge">🔥 الأكثر قيمة</div>
-
-<h3>🚗 سيدان - اشتراك 8 مرات</h3>
-
-<div class="price-row">
-<span>اشتراك 8 مرات</span>
-
-<div>
-<span style="color:#000;">بدل</span>
-<span class="old">1440 ج</span><br>
-<span class="new">899 ج</span>
-</div>
-
-</div>
-
-<a class="book"
-href="https://api.whatsapp.com/send?phone=201127915966&text=السلام عليكم، أريد حجز اشتراك سيدان 8 مرات">
-📲 احجز
-</a>
-
-</div>
-
-</div>
-
-
+<h2 class="section-title">🚘 أسعار السيدان (Sedan)</h2>
 <div class="package">
-
-<h3>🧼 سيدان - خارجي وداخلي</h3>
-
-<div class="price-row">
-<span>غسيل مرة واحدة</span>
-<div class="new">239 ج</div>
+<h3>🚗 خارجي فقط:</h3>
+<div class="price-row"><span>• مرة واحدة:</span><div><span class="new">149 ج</span> <span class="old">بدل 169 ج</span></div></div>
 </div>
-
-<div class="price-row">
-<span>اشتراك 4 مرات</span>
-
-<div>
-<span style="color:#000;">بدل</span>
-<span class="old">1160 ج</span><br>
-<span class="new">799 ج</span>
-</div>
-
-</div>
-
-<div class="price-row">
-<span>اشتراك 6 مرات</span>
-
-<div>
-<span style="color:#000;">بدل</span>
-<span class="old">1740 ج</span><br>
-<span class="new">1099 ج</span>
-</div>
-
-</div>
-
-<div class="package" style="border:3px solid #00c853;">
-
-<div class="badge">🔥 الأكثر قيمة</div>
-
-<h3>🧼 سيدان - اشتراك 8 مرات</h3>
-
-<div class="price-row">
-
-<span>اشتراك 8 مرات</span>
-
-<div>
-
-<span style="color:#000;">بدل</span>
-
-<span class="old">2320 ج</span><br>
-
-<span class="new">1399 ج</span>
-
-</div>
-
-</div>
-
-<a class="book"
-href="https://api.whatsapp.com/send?phone=201127915966&text=السلام عليكم، أريد حجز اشتراك سيدان خارجي وداخلي 8 مرات">
-
-📲 احجز
-
-</a>
-
-</div>
-
-</div>
-
-<h2 class="section-title">
-🚙 أسعار SUV
-</h2>
-
-  <div class="package">
-
-<h3>🚙 SUV - غسيل خارجي</h3>
-
-<div class="price-row">
-<span>غسيل مرة واحدة</span>
-<div class="new">169 ج</div>
-</div>
-
-<div class="price-row">
-<span>اشتراك 4 مرات</span>
-<div>
-<span style="color:#000;">بدل</span>
-<span class="old">800 ج</span><br>
-<span class="new">579 ج</span>
-</div>
-</div>
-
-<div class="price-row">
-<span>اشتراك 6 مرات</span>
-<div>
-<span style="color:#000;">بدل</span>
-<span class="old">1200 ج</span><br>
-<span class="new">829 ج</span>
-</div>
-</div>
-
-<div class="package" style="border:3px solid #00c853;">
-
-<div class="badge">🔥 الأكثر قيمة</div>
-
-<h3>🚙 SUV - اشتراك 8 مرات</h3>
-
-<div class="price-row">
-<span>اشتراك 8 مرات</span>
-
-<div>
-<span style="color:#000;">بدل</span>
-<span class="old">1600 ج</span><br>
-<span class="new">1049 ج</span>
-</div>
-
-</div>
-
-<a class="book"
-href="https://api.whatsapp.com/send?phone=201127915966&text=السلام عليكم، أريد حجز اشتراك SUV خارجي 8 مرات">
-📲 احجز
-</a>
-
-</div>
-
-</div>
-
 <div class="package">
-
-<h3>🧼 SUV - خارجي وداخلي</h3>
-
-<div class="price-row">
-<span>غسيل مرة واحدة</span>
-<div class="new">289 ج</div>
+<h3>🧼 خارجي وداخلي:</h3>
+<div class="price-row"><span>• مرة واحدة:</span><div><span class="new">239 ج</span> <span class="old">بدل 269 ج</span></div></div>
 </div>
 
-<div class="price-row">
-<span>اشتراك 4 مرات</span>
-<div>
-<span style="color:#000;">بدل</span>
-<span class="old">1360 ج</span><br>
-<span class="new">949 ج</span>
-</div>
-</div>
-
-<div class="price-row">
-<span>اشتراك 6 مرات</span>
-<div>
-<span style="color:#000;">بدل</span>
-<span class="old">2040 ج</span><br>
-<span class="new">1299 ج</span>
-</div>
-</div>
-
-<div class="package" style="border:3px solid #00c853;">
-
-<div class="badge">🔥 الأكثر قيمة</div>
-
-<h3>🧼 SUV - اشتراك 8 مرات</h3>
-
-<div class="price-row">
-<span>اشتراك 8 مرات</span>
-
-<div>
-<span style="color:#000;">بدل</span>
-<span class="old">2720 ج</span><br>
-<span class="new">1699 ج</span>
-</div>
-
-</div>
-
-<a class="book"
-href="https://api.whatsapp.com/send?phone=201127915966&text=السلام عليكم، أريد حجز اشتراك SUV خارجي وداخلي 8 مرات">
-📲 احجز
-</a>
-
-</div>
-
-</div>
-
-<h2 class="section-title">⭐ لماذا تختار KARAM CAR؟</h2>
-
-<div class="grid">
-
-<div class="card">🚗 خدمة متنقلة حتى باب منزلك</div>
-
-<div class="card">💦 غسيل احترافي بمعدات أصلية</div>
-
-<div class="card">🛡️ مواد آمنة 100% على البوية</div>
-
-<div class="card">🎁 هدايا مجانية مع كل غسلة</div>
-
-<div class="card">💳 الدفع بعد انتهاء الخدمة</div>
-
-<div class="card">👌 لو معجبكش الشغل متدفعش جنيه</div>
-
-</div>
-
-<h2 class="section-title">⭐ آراء العملاء</h2>
-
+<h2 class="section-title">🚙 أسعار الـ SUV</h2>
 <div class="package">
-
-<p style="line-height:2;font-size:18px;">
-⭐⭐⭐⭐⭐<br><br>
-
-"بصراحة أول مرة أجرب خدمة غسيل متنقل، والشغل كان ممتاز والعربية رجعت جديدة."
-</p>
-
-<hr style="margin:20px 0;">
-
-<p style="line-height:2;font-size:18px;">
-⭐⭐⭐⭐⭐<br><br>
-
-"التزام في المواعيد وشغل محترم جدًا، وأنصح أي حد يجرب."
-</p>
-
-<hr style="margin:20px 0;">
-
-<p style="line-height:2;font-size:18px;">
-⭐⭐⭐⭐⭐<br><br>
-
-"أفضل حاجة إنك بتغسل العربية تحت البيت من غير ما أتحرك."
-</p>
-
+<h3>🚗 خارجي فقط:</h3>
+<div class="price-row"><span>• مرة واحدة:</span><div><span class="new">169 ج</span> <span class="old">بدل 189 ج</span></div></div>
+</div>
+<div class="package">
+<h3>🧼 خارجي وداخلي:</h3>
+<div class="price-row"><span>• مرة واحدة:</span><div><span class="new">289 ج</span> <span class="old">بدل 310 ج</span></div></div>
 </div>
 
-<div style="text-align:center;margin:40px 0;">
-
-<h2 style="color:#FFD54F;">
-📲 احجز الآن
-</h2>
-
-<p style="font-size:28px;font-weight:bold;margin:20px 0;">
-01127915966
-</p>
-
-<a class="book"
-style="font-size:22px;padding:18px 35px;"
-href="https://api.whatsapp.com/send?phone=201127915966&text=السلام عليكم، أريد حجز غسيل سيارة">
-
-📱 احجز عبر واتساب
-
-</a>
-
-</div>
-
-  <div class="footer">
-
-<hr style="border-color:#444;margin:30px 0;">
-
-<h2 style="color:#FFD54F;">🚗 KARAM CAR</h2>
-
-<p style="margin-top:10px;">
-💦 غسيل سيارات متنقل حتى باب منزلك
-</p>
-
-<p>
-🛡️ مواد آمنة 100% على البوية
-</p>
-
-<p>
-🎁 هدايا مجانية مع كل غسلة
-</p>
-
-<p>
-📞 للحجز والاستفسار
-<br>
-<strong style="font-size:24px;color:#00BCD4;">
-01127915966
-</strong>
-</p>
-
-<div style="margin-top:20px;">
-
-<a class="book"
-href="https://api.whatsapp.com/send?phone=201127915966&text=السلام عليكم، أريد حجز غسيل سيارة">
-📲 احجز عبر واتساب
-</a>
-
-</div>
-
-<p style="margin-top:35px;font-size:14px;color:#999;">
-© 2026 KARAM CAR - جميع الحقوق محفوظة
-</p>
-
+<div style="text-align:center;margin:30px 0">
+<a class="book" href="https://wa.me/201127915966">📲 احجز الآن واتساب</a>
+<p style="margin-top:15px">💳 الدفع بعد ما تشوف الشغل بنفسك<br>📍 بنغطي الشروق كلها - خدمة متنقلة<br><br>يوجد طريقه دفع انيستا او محفظه او كاش<br>#غسيل_سيارات #الشروق #خدمة_متنقلة #KARAM_CAR</p>
 </div>
 
 </div>
-
 </body>
-
 </html>
